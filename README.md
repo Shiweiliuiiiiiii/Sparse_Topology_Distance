@@ -4,8 +4,11 @@ This repo contains code accompaning the paper, Topological Insights into Sparse 
 ## Requirements
 
 This code requires the following:
+
 Python 3.*
+
 Sscipy 1.4.1
+
 matplotlib 3.1.3
 
 ## Data
