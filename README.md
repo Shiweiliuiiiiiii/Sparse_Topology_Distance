@@ -11,7 +11,13 @@ Sscipy 1.4.1
 
 matplotlib 3.1.3
 
-## Data
+## Code Structure and Usage
+
+The repo provide an example implementation of NNSTD, a method to measure the distance between the graphs spanned over the network weights.
+
+The main script is sparse_topology_distance.py which contains the code to compare different sparse topologies. 
+
+We upload the topologies used to reproduce the results of Figure 4 in the original paper in the folder topo/. 
 
 
 
