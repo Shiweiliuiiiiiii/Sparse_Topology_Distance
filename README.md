@@ -17,7 +17,7 @@ The repo provide an example implementation of NNSTD, a method to measure the dis
 
 The main script is sparse_topology_distance.py which contains the code to compare different sparse topologies. 
 
-We upload the topologies used to reproduce the results of Figure 4 in the original paper in the folder topo/. 
+We upload the topologies used to reproduce the results of Figure 4 in the original paper in the folder topo/. We initialize  one sparse network with a density level of 0.6%. Then, we generate 9 networks by iteratively changing 1% of the connections from the previous generation step. By doing this, the density of these networks is the same, whereas thetopologies vary a bit. 
 
 
 
