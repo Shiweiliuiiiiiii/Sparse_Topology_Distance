@@ -23,7 +23,7 @@ To reproduce the results of Figure 4 from the paper, run
 ```
 python sparse_topology_distance.py --epoch 0 --layer 0
 ```
-## Results from the Papers
+## Results from the Paper
 
 We initialize  one sparse network with a density level of 0.6%. Then, we generate 9 networks by iteratively changing 1% of the connections from the previous generation step. By doing this, the density of these networks is the same, whereas thetopologies vary a bit. Measured by our method, we find that similar initial topologies gradually evolve to very different topologies while training with adaptive sparse connectivity shown as following:
 ![](Figure_4.png)
