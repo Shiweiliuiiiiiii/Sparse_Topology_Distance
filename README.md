@@ -19,7 +19,7 @@ The repo provide an example implementation of NNSTD, a method to measure the dis
 
 The main script is sparse_topology_distance.py which contains the code to compare different sparse topologies. 
 
-The sparse networks are trained using the code from [Sparse Evolutionary Training (SET)](https://github.com/dcmocanu/sparse-evolutionary-artificial-neural-networks)
+The sparse networks are obtained by [Sparse Evolutionary Training (SET)](https://www.nature.com/articles/s41467-018-04316-3.pdf) with their efficient [code](https://github.com/dcmocanu/sparse-evolutionary-artificial-neural-networks).
 
 We upload the topologies used to reproduce the results of Figure 4 in the original paper in the folder topo/. 
 
