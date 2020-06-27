@@ -1,5 +1,5 @@
 # Sparse_Topology_Distance
-This repo contains code accompaning the paper, Topological Insights into Sparse Neural Networks (Liu et al., ECMLPKDD 2020). It includes code and topology example for measuring the sparse topology distance between two sparse neural networks. The sparse topology used in this paper refers to the topology of a sub-network (a fraction of parameters) of a dense network. And the sparse topology distance measured in this paper refers to the distance between two sub-networks. 
+This repo contains code accompaning the paper, [Topological Insights into Sparse Neural Networks (Liu et al., ECMLPKDD 2020)](https://arxiv.org/abs/2006.14085) . It includes code and topology example for measuring the sparse topology distance between two sparse neural networks. The sparse topology used in this paper refers to the topology of a sub-network (a fraction of parameters) of a dense network. And the sparse topology distance measured in this paper refers to the distance between two sub-networks. 
 
 ## Requirements
 
