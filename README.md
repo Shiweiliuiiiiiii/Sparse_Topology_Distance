@@ -5,6 +5,8 @@ This repo contains code accompaning the paper, [Topological Insights into Sparse
 
 This code requires the following:
 
+Linux
+
 Python 3.*
 
 Sscipy 1.4.1
