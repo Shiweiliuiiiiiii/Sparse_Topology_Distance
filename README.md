@@ -36,12 +36,12 @@ We initialize  one sparse network with a density level of 0.6%. Then, we generat
 
 If you use this code, please consider citing the following paper:
 
-@inproceedings{liu2020topological,
-title={Topological Insights into Sparse Neural Networks},
-author={Liu, Shiwei and Van der Lee, Tim and Yaman, Anil and Atashgahi, Zahra and Ferraro, Davide and Sokar, Ghada and Pechenizkiy, Mykola and Mocanu, Decebal Constantin},
-booktitle={ECMLPKDD},
-year={2020}
-}
+@inproceedings{liu2020topological,  
+title={Topological Insights into Sparse Neural Networks},  
+author={Liu, Shiwei and Van der Lee, Tim and Yaman, Anil and Atashgahi, Zahra and Ferraro, Davide and Sokar, Ghada and Pechenizkiy, Mykola and Mocanu, Decebal Constantin},  
+booktitle={ECMLPKDD},  
+year={2020}  
+}  
 
 
 
