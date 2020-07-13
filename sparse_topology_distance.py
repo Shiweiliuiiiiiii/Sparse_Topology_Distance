@@ -1,7 +1,6 @@
-"""
-Official implementation of Topological Insights into Sparse Neural Networks with Graph Theory of Liu et al.
-The compared sparse topologies should be saved as .nzp format by "scipy.sparse.save_npz".
-# If you use parts of this code please cite the following articles:
+# Official implementation of Topological Insights into Sparse Neural Networks with Graph Theory of Liu et al.
+# The compared sparse topologies should be saved as .nzp format by "scipy.sparse.save_npz".
+
 
 import matplotlib.pyplot as plt
 from os import listdir
