@@ -60,19 +60,7 @@ def compute(epoch, DATAFILE):
 
     saved_data = mana.dict(load_obj(DATAFILE))
 
-    def proc_run(counter, saved_data, datad, indices):
-        c1 = 0
-        print('Process ' + str(counter) + ' started with ' + str(len(indices)) + ' computations! Let\'s go!')
-        t1 = time.time()
-        for (i1, i2) in indices:
-            c = NNSTD(matrices[i1], matrices[i2], saved_data)
-            datad[(i1, i2)] = np.mean(c)
-            datad[(i2, i1)] = np.mean(c)
-            c1 += 1
-            print(counter,
-                  "Progress:", {100 * int(1000 * c1 / (len(indices))) / 1000},
-                   format_time((time.time() - t1) / c1, len(indices) - c1), "left")
-            sys.stdout.flush()
+
 
     # multi processor opti
     num_procs = args.nprocessor
@@ -86,7 +74,7 @@ def compute(epoch, DATAFILE):
                 c2 += 1
     ps = []
     for i in range(num_procs):
-        p = Process(target=proc_run, args=(i, saved_data, data, indices[i]))
+        p = Process(target=proc_run, args=(i, saved_data, data, indices[i], matrices))
         ps.append(p)
     for p in ps:
         p.start()
@@ -108,6 +96,19 @@ def getNormalizedEditDistance(a, b):
         normalizedEdit = 1
     return normalizedEdit
 
+def proc_run(counter, saved_data, datad, indices, matrices):
+    c1 = 0
+    print('Process ' + str(counter) + ' started with ' + str(len(indices)) + ' computations! Let\'s go!')
+    t1 = time.time()
+    for (i1, i2) in indices:
+        c = NNSTD(matrices[i1], matrices[i2], saved_data)
+        datad[(i1, i2)] = np.mean(c)
+        datad[(i2, i1)] = np.mean(c)
+        c1 += 1
+        print(counter,
+              "Progress:", {100 * int(1000 * c1 / (len(indices))) / 1000},
+               format_time((time.time() - t1) / c1, len(indices) - c1), "left")
+        sys.stdout.flush()
 
 def compareLayers(layer1, layer2, saved_data={}, name1="", name2=""):
     try:
